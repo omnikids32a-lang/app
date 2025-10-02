@@ -1,0 +1,227 @@
+@media(max-width: 900px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+     h1, h2{
+        color: #16ae58;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .titulos{
+        color: #16ae58;
+    }
+   
+    .parte-1b button{
+        font-size: 2rem;
+        margin-top: 6rem;
+        background: #da2121;
+        color: #fff;
+        padding: 0.875rem 3.3rem; 
+        border: none;
+        border-radius: 0.5rem; 
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .parte-2b button{
+        font-size: 2rem;
+        margin-top: 6rem;
+        background: #16a34a;
+        color: #fff;
+        padding: 0.875rem 3.3rem; 
+        border: none;
+        border-radius: 0.5rem; 
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+    .parte-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parte-1a{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parte-1 h1{
+        font-size: 2.8rem;
+        margin-top: 2rem;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+
+    .parte-1b{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    body{
+         background: #f8fdfb;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./fundo-mobile-home.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+
+    button{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    button img{
+        width: 8rem;
+        margin-bottom: 2rem;
+    }
+
+     .kid-right img{
+        width: 40%;
+        position: absolute;
+        top: 78%;     
+        left: 64%;
+    }
+
+    .kid-left img{
+        width: 35%;
+        position: absolute;
+        top: 14%;      
+        right: 64%;
+        z-index: 1;
+    }
+}
+
+@media(min-width: 900px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1, h2{
+        color: #16ae58;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .titulos{
+        color: #16ae58;
+        text-align: center;
+    }
+
+    .parte-1{
+        margin-top: 1rem;
+        display: flex;
+        
+    }
+    .parte-1a{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parte-1 h1{
+        font-size: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .parte-1b button{
+        font-size: 2.3rem;
+        margin-right: 20rem;
+        margin-top: 3rem;
+        background: #da2121;
+        color: #fff;
+        padding: 0.875rem 6rem; 
+        border: none;
+        border-radius: 0.5rem; 
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .parte-2b button{
+        font-size: 2.3rem;
+        margin-top: 3rem;
+        background: #16a34a;
+        color: #fff;
+        padding: 0.875rem 6.5rem; 
+        border: none;
+        border-radius: 0.5rem; 
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .parte-1b button:hover{
+        background: #801515;
+    }
+
+    .parte-2b button:hover{
+        background: #15803d;
+    }
+
+    .bts{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body{
+        background: #f8fdfb;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./fundo2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    button img{
+        width: 12rem;
+        margin-bottom: 4rem;
+    }
+
+    .kid-right img{
+        width: 25%;
+        position: absolute;
+        top: 48.2%;     
+        right: 5%;
+        z-index: 1; 
+    }
+
+    .kid-left img{
+        width: 20%;
+        position: absolute;
+        top: 50%;      
+        right: 70%;
+        z-index: 1; 
+    }
+}
