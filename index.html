@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="ServidorESP.js"></script>
+
+   <script>
+    async function enviarAlerta() {
+      try {
+        const resp = await fetch("/alerta");
+        const txt = await resp.text();
+        alert(txt);
+      } catch (err) {
+        alert("Erro ao enviar alerta ao ESP32.");
+        console.error(err);
+      }
+    }
+
+    function abrirGPS() {
+      window.location.href = "/gps";
+    }
+  </script>
 </head>
+
 <body>
     <main>
         
@@ -18,11 +37,11 @@
 
             <div class="bts">
             <div class="parte-1b">
-              <button onClick={handleClick} className="bt-home"><img src="./alerta.png" alt="">ALERTA</button>
+              <button onclick="enviarAlerta()" className="bt-home"><img src="./alerta.png" alt="">ALERTA</button>
             </div>
             
             <div class="parte-2b">
-              <button onClick={handleClick} className="bt-home"><img src="./gps.png" alt="">GPS</button>
+              <button onclick="abrirGPS()" className="bt-home"><img src="./gps.png" alt="">GPS</button>
             </div>
             </div>
             
